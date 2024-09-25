@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+}
+
+body {
+    background: #2c2c2c;
+    display: flex;
+    overflow: hidden;
+
+}
+
+aside {
+    float: left;
+    background: #181818;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: white;
+    border-right: 5px solid #4d4d4d;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+aside::-webkit-scrollbar {
+    width: 0px;
+
+}
+
+
+aside img {
+    width: 80px;
+    float: left;
+}
+
+aside .logo {
+    font-size: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    position: relative;
+    top: -5px;
+}
+
+aside h3 {
+    margin-top: 50px;
+    font-size: 28px;
+}
+
+.aside_ul {
+    list-style: none;
+    }
+
+.aside_ul_li {
+    color: white;
+    display: block;
+    margin-top: 20px;
+    transition: transform .6s ease;
+}
+
+.aside_ul_li:hover, .aside_ul_a:hover {
+    color: #eb5959;
+    text-decoration: none;
+    transform: scale(1.05);
+
+}
+
+.aside_ul_a {
+    text-decoration: none;
+}
+
+main {
+    flex-grow: 1; /* Контент занимает оставшееся пространство */
+    overflow-y: auto; /* Включаем вертикальную прокрутку для содержимого */
+    height: 100vh; /* Высота содержимого на всю высоту окна */
+    margin: 0 auto;
+    width: 80%;
+}
+
+main::-webkit-scrollbar {
+    width: 5px;
+}
+
+main::-webkit-scrollbar-track {
+    background: #191919;
+}
+
+main::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}
+
+main::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, #ea2e7b, #f5a743);/* Цвет ползунка при наведении */
+}
+
+
+main .features {
+    color: white;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.image1 {
+    width: 35%;
+    border: 5px solid #4d4d4d;
+}
+
+main .features h1 {font-size: 50px;}
+.features p {max-width: 80%; margin: 20px auto;}
+
+.wrapper
+{
+    width: 100%;
+    height: 50%;
+    display: block;
+    background: #4d4d4d;
+    margin-top: 5%;
+}
+
+.quiz-frame
+{
+    border: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.quiz__head
+{
+    font-size: 20pt;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.head__content
+{
+    padding: 5px;
+    color: white;
+}
+
+.quiz__body
+{
+    margin: 10px;
+}
+
+.quiz__footer
+{
+    position: relative;
+    bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.footer__content
+{
+    padding: 5px;
+    color: white;
+}
+
+.button
+{
+    border: 0;
+    border-radius: 10px;
+    background: #6477EB;
+    color: #fff;
+    padding: 10px 25px;
+    width: 70%;
+    font-size: 15pt;
+    display: block;
+    margin: 2px auto;
+    cursor: pointer;
+}
+
+.button_wrong
+{
+    background: #EB6465;
+}
+
+.button_correct
+{
+    background: #5EB97D;
+}
+
+.button_passive
+{
+    background: #B3B3B3;
+}
+
+.content1
+{
+    width: 50%;
+    border: 5px solid #4d4d4d;
+}
+
+.video
+{
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+/* Основной стиль списка */
+.aside_ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.aside_ul_li {
+    position: relative;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.aside_ul_a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.dropdown.open .dropdown-content {
+    display: block;
+}
+
+/* Стиль для иконок и доп. элементов */
+.fa-cube, .fa-house {
+    margin-right: 10px;
+}

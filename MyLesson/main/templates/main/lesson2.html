@@ -1,0 +1,39 @@
+{% extends 'main/layout.html' %}
+
+
+
+{% block title %}Контент первого урока{% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h3>Тестирование по теме: ___________</h3>
+        <p>Не рекомендуем использование сторонних источников информации при прохождении тестирования</p>
+    </div>
+    <div class="wrapper" id="quiz">
+        <main class="main">
+            <div class="quiz__head">
+                <div class="head__content" id="head">Lorem ipsum dolor</div>
+            </div>
+
+            <div class="quiz__body">
+                <div class="buttons">
+                    <div class="buttons__content" id="buttons">
+                        <button class="button">Default button</button>
+                        <br>
+                        <button class="button button_wrong">Wrong answer</button>
+                        <br>
+                        <button class="button button_correct">Correct answer</button>
+                        <br>
+                        <button class="button button_passive">Unclicked button</button>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="quiz__footer">
+                    <div class="footer__content" id="pages">0 / 0</div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+{% endblock %}
